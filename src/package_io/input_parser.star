@@ -20,19 +20,19 @@ DEFAULT_CL_IMAGES = {
 }
 
 DEFAULT_BATCHER_IMAGES = {
-    "op-batcher": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-batcher:develop",
+    "op-batcher": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-batcher:v1.11.6-dev.1",
 }
 
 DEFAULT_CHALLENGER_IMAGES = {
-    "op-challenger": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-challenger:develop",
+    "op-challenger": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-challenger:v1.3.4-rc.2",
 }
 
 DEFAULT_SUPERVISOR_IMAGES = {
-    "op-supervisor": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-supervisor:develop",
+    "op-supervisor": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-supervisor:v0.2.0-dev.2",
 }
 
 DEFAULT_PROPOSER_IMAGES = {
-    "op-proposer": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-proposer:develop",
+    "op-proposer": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-proposer:v1.10.1-rc.1",
 }
 
 DEFAULT_SIDECAR_IMAGES = {
@@ -701,9 +701,9 @@ def default_op_contract_deployer_global_deploy_overrides():
 
 def default_op_contract_deployer_params():
     return {
-        "image": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-deployer:v0.0.12",
-        "l1_artifacts_locator": "https://storage.googleapis.com/oplabs-contract-artifacts/artifacts-v1-fffcbb0ebf7f83311791534a41e65ef90df47797f9ca8f86941452f597f7128c.tar.gz",
-        "l2_artifacts_locator": "https://storage.googleapis.com/oplabs-contract-artifacts/artifacts-v1-fffcbb0ebf7f83311791534a41e65ef90df47797f9ca8f86941452f597f7128c.tar.gz",
+        "image": "us-docker.pkg.dev/oplabs-tools-artifacts/images/op-deployer:f79ed8b9c9cbdbf8bb492074f3f98da7f072e21a",
+        "l1_artifacts_locator": "https://storage.googleapis.com/oplabs-contract-artifacts/artifacts-v1-f9a55787fd592c2fa6d4c253a3ad7904ce55f255ab59cc6d2a576c938f021896.tar.gz",
+        "l2_artifacts_locator": "https://storage.googleapis.com/oplabs-contract-artifacts/artifacts-v1-f9a55787fd592c2fa6d4c253a3ad7904ce55f255ab59cc6d2a576c938f021896.tar.gz",
         "global_deploy_overrides": default_op_contract_deployer_global_deploy_overrides(),
     }
 
